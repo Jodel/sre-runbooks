@@ -1,11 +1,11 @@
-baseURL: "https://runbooks.prometheus-operator.dev"
+baseURL: "https://jodel.github.io/sre-runbooks/"
 languageCode: "en-us"
-title: "kube-prometheus runbooks"
+title: "Jodel SRE Runbooks"
 
 theme: book
 
 params:
-  BookRepo: "https://github.com/prometheus-operator/runbooks"
+  BookRepo: "https://github.com/Jodel/sre-runbooks"
   BookEditPath: "edit/main"
   BookSearch: true
   BookSection: "runbooks"
