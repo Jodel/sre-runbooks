@@ -28,5 +28,5 @@ Failure of processing of a scheduled task.
 
 - clean up failed jobs, e.g. using `kubectl`:
   ```bash
-  k -n $NAMESPACE delete job --field-selector status.successful!=1
+  kubectl -n $NAMESPACE delete job --field-selector status.successful!=1
   ```
