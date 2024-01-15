@@ -25,3 +25,8 @@ Failure of processing of a scheduled task.
 - See [Job patterns](https://kubernetes.io/docs/tasks/job/)
 - redesign job so that it is idempotent (can be re-run many times which will
   always produce the same output even if input differes)
+
+- clean up failed jobs, e.g. using `kubectl`:
+  ```bash
+  k delete job --context my-context -n my-namespace --field-selector status.successful!=1
+  ```
